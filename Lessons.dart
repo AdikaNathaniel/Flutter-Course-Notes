@@ -127,3 +127,31 @@ B.
       6
       8
       10
+C.
+  List arr [1,4,32,6];
+  for(int i=0;i<=3;i++){
+    print(arr[i]);
+  }
+
+  Console Output:
+      1
+      4
+      32
+      6
+NB : We can use var or dynamic,as any one of these works.
+25.Map is a key-value pair.In Dart,a map allows you to locate
+a value with a unique key.
+Eg :
+    var details  {
+        'FirstName' : 'Nathaniel',
+        'LastName' : 'Adika'
+    }
+The importance of maps is that in a map,you can store alot of
+details like name,favorite shoe and contact information.With maps,
+data retrieval and updation of details is easy.
+ Technically,maps can be created as :
+       Map<String,String> moreDetails = new Map();
+       moreDetails['Occupation'] = 'Software Developer';
+       moreDetails['Country'] = 'Ghana';
+To remove one of these,
+       moreDetails.remove('Occupation');
