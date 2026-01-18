@@ -39,3 +39,21 @@ Eg :
 a single unit.Technically,a class in programming is essentially a blueprint or template for creating objects.
 Method is a block of code that only runs when it is called.
 The help for code reusability instead of writing the code so many times.
+22. main is the entry point of code.
+   class Even{
+    int a = 0;
+    printText(){
+        print("Hello World");
+    }
+   }
+
+   void main(){
+    Even obj = Even();
+    obj.printText();
+    print(obj.a);
+   }
+
+
+   Output Console is :
+   - Hello World
+   - 0 
