@@ -25,6 +25,7 @@ with the new updates in the app.
 16.Dart Pad is a website to write dart code.
 17.List is a collection of similar datatypes stored  in 
 contiguous memory locations.
+     var list_name = [1,2,3];
 A contiguous memory location means that data is stored in 
 consecutive (adjacent) memory addresses, one right after the other, with no gaps in between.
 18.mainAxisAlignment is from top to down but crossAxisAlignment is from left 
@@ -78,3 +79,33 @@ void main() {
   var person1 = Person("Alice", 25); // Constructor runs here
   person1.greet(); // Output: Hello, my name is Alice and I am 25 years old.
 }
+   Eg 2 : 
+class Even{
+    int a = 0;
+    Even(this.a);
+
+    bool checkEven(){
+        if(a%2==0){
+            return true;
+        }
+        else return false;
+    }
+
+    // else if statement is given as "else if"
+}
+
+void main(){
+    Even obj = Even(4321);
+    print(obj.checkEven());
+}
+
+Output Console is False
+24. for(var i = 0; i<=5;i++){
+    print("Hello");
+}
+The response is given as :
+     Hello 
+     Hello 
+     Hello
+     Hello
+     Hello
