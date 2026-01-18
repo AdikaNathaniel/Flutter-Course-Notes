@@ -22,3 +22,8 @@ it retrieves all old files open but for Cold boot all no-saved files
 are lost.
 15.Hot reload updates a change instantly but Hot Restart starts the app again
 with the new updates in the app.
+16.Dart Pad is a website to write dart code.
+17.List is a collection of similar datatypes stored  in 
+contiguous memory locations.
+A contiguous memory location means that data is stored in 
+consecutive (adjacent) memory addresses, one right after the other, with no gaps in between.
