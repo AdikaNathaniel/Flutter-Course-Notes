@@ -298,4 +298,15 @@ void main(){
         }
     }
                    STATE MANAGEMENT
-36.
+36.When a widget changes when a user interacts with it,it is termed
+as a stateful widget.
+setState only works in Stateful widgets.
+A stateless widget is one that never changes.Eg is Icon,IconButton and Text.
+Explaining further,
+A StatelessWidget is a widget that does NOT change once it is built.
+
+A.No data changes
+B.UI stays the same
+C.Used for static content
+
+Examples are Text,Icons,Buttons (if they don’t change) and App Tite.
