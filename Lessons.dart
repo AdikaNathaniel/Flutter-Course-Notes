@@ -173,3 +173,45 @@ For,
 The response will be :
     Name : Paulina
     Full Name: Paulina Knop
+26. Null Safety helps to avoid null errors.
+So null safety is used to make variables non-nullable by default.
+It makes code more predictable and less prone to crashes.
+The goal is to force you to think if a variable can be null and plan
+accordingly for it.
+Eg1 :
+   int a = 42;    // This is non-nullable
+   int? b;       // This is nullable
+
+Eg2 :
+     String? name;
+     if (name != null){
+        print(
+            'Hello', $name!
+        )
+     }
+
+     print(name?.length)  //Get the length if the name is not null
+     print(name ?? 'Guest')  // Print Guest if the name is null
+
+Using null safety is just a smarter and upgraded way of coding!
+
+27.To print your name 1000 times,
+
+      for(int i=1;i<=1000;i++){
+        print("Paulina Knop")
+      }
+28.Adding two numbers,divide them and multiply by 100,
+      void main(){
+        int a=20;
+        int b=23;
+        double c=(a+b)/10;
+        c=c*100;
+        print(c);
+      }
+29.Adding all numbers between 100 and 1000 and printing them
+      void main(){
+        int a=0;
+        for(int i=100;i<=1000;i++){
+            a=a+i;
+        }
+      }
