@@ -57,3 +57,24 @@ The help for code reusability instead of writing the code so many times.
    Output Console is :
    - Hello World
    - 0 
+23.Constructors are special methods used to initialize an object
+when it is created in a program.It should have the same name as the 
+class name.
+   Eg :
+class Person {
+  String name;
+  int age;
+
+  // Constructor
+  Person(this.name, this.age);
+
+  void greet() {
+    print("Hello, my name is $name and I am $age years old.");
+  }
+}
+
+void main() {
+  // Creating an object
+  var person1 = Person("Alice", 25); // Constructor runs here
+  person1.greet(); // Output: Hello, my name is Alice and I am 25 years old.
+}
