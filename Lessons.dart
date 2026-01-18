@@ -35,3 +35,7 @@ the scroll should be vertically.
 Eg : 
     scrollDirection : Axis.horizontal
     scrollDirection : Axis.vertical
+21. Classes are used for wrapping data and functions also called methods into 
+a single unit.Technically,a class in programming is essentially a blueprint or template for creating objects.
+Method is a block of code that only runs when it is called.
+The help for code reusability instead of writing the code so many times.
