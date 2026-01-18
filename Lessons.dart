@@ -100,7 +100,9 @@ void main(){
 }
 
 Output Console is False
-24. for(var i = 0; i<=5;i++){
+24. The concept of loops is running code for repeated execution.
+{ For loop,while loop, do while and for in loop }
+ for(var i = 0; i<=5;i++){
     print("Hello");
 }
 The response is given as :
