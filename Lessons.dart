@@ -155,3 +155,8 @@ data retrieval and updation of details is easy.
        moreDetails['Country'] = 'Ghana';
 To remove one of these,
        moreDetails.remove('Occupation');
+To iterate,
+       details.forEach((key,value){
+        print('Key: $key, Value: $value');
+});
+  This will print out each key and each value.
