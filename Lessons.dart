@@ -232,5 +232,62 @@ Console Response is 2.
     temp=a;
     a=b;
     b=temp;
-    print()
+    print(a); // a becomes 43
+    print(b); // b becomes 21
    }
+
+32.What is the largest value among three variables
+    void main(){
+        int a 32;
+        int b 321;
+        int c 2;
+
+        if(a > b && a > c){
+            print("A is the greatest with $a");
+        else if(b > a && b > c){
+            print("B is the greatest with $b");
+        else {
+            print("C is the greatest with $c");
+        }
+        }
+        }
+    }
+33.Using the substring,
+   void main(){
+    var string='dartlang';
+    print(string.substring(1));
+   }
+
+Output Console : artlang
+void main(){
+    var string='dartlang';
+    print(string.substring(1,4));
+   }
+
+Output Console : art
+This takes from 1 to 3!
+
+void main(){
+    var string='dartlang';
+    print(string.isEmpty);    // This will return false
+    print(string.contains('a'));    // true
+     print(string.toUpperCase());    // This will return DARTLANG
+   }
+
+34.Checking if vowels exist in a 
+    void main(){
+        String str 'Nathaniel Adika';
+
+        if(str.contains('a')==true ||
+        str.contains('e')==true ||
+        str.contains('i')==true ||
+        str.contains('o')==true ||
+        str.contains('u')==true ||
+        ){
+            print(true);
+        }else{
+            print(false);
+        }
+    }
+
+// Output Console will be true.
