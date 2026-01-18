@@ -27,3 +27,11 @@ with the new updates in the app.
 contiguous memory locations.
 A contiguous memory location means that data is stored in 
 consecutive (adjacent) memory addresses, one right after the other, with no gaps in between.
+18.mainAxisAlignment is from top to down but crossAxisAlignment is from left 
+to right.
+19.Widget overflow is when the widgets mov out of the screen size.
+20.scrollDirection helps to tell if we should scroll horizontally or more of
+the scroll should be vertically.
+Eg : 
+    scrollDirection : Axis.horizontal
+    scrollDirection : Axis.vertical
