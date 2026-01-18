@@ -313,3 +313,11 @@ Examples are Text,Icons,Buttons (if they don’t change) and App Title.
 NB: Provider and riverpod are used for state management.
 
 37.The primary function that runs the app is RunApp().
+38.In the lifecycle of a stateful widget,they are three parts:
+  * initState()
+  * widget build
+  * dispose()
+39.await Future.delayed(
+    Duratio(milliseconds : 5000)   // This causes a delay of 5s in flutter
+);
+40.Safe Area prevents intrusion to the system of the device.
