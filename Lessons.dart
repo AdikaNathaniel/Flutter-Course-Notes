@@ -309,4 +309,7 @@ A.No data changes
 B.UI stays the same
 C.Used for static content
 
-Examples are Text,Icons,Buttons (if they don’t change) and App Tite.
+Examples are Text,Icons,Buttons (if they don’t change) and App Title.
+NB: Provider and riverpod are used for state management.
+
+37.The primary function that runs the app is RunApp().
