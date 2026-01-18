@@ -214,4 +214,23 @@ Using null safety is just a smarter and upgraded way of coding!
         for(int i=100;i<=1000;i++){
             a=a+i;
         }
+        print(a);
       }
+30.Convert an integer to a string and print the length of it.
+    void main(){
+        int a=32;
+        String b=a.toString();
+        print(b.length);
+    }
+Console Response is 2.
+
+31.Swapping the value of two variables.
+   void main(){
+    int a=21;
+    int b=43;
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+    print()
+   }
