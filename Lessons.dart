@@ -160,3 +160,16 @@ To iterate,
         print('Key: $key, Value: $value');
 });
   This will print out each key and each value.
+
+  Map name {'Name': 'Sagnik','Name':'Paulina'};
+  name['Full Name']='Paulina Knop';
+  print(name);
+
+The response will be:
+  {Name: Paulina, Full Name : 'Paulina Knop'}
+
+For, 
+    name.forEach((k,v)) =>print('$k : $v')
+The response will be :
+    Name : Paulina
+    Full Name: Paulina Knop
