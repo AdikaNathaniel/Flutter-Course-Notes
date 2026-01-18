@@ -101,6 +101,7 @@ void main(){
 
 Output Console is False
 24. The concept of loops is running code for repeated execution.
+A.
 { For loop,while loop, do while and for in loop }
  for(var i = 0; i<=5;i++){
     print("Hello");
@@ -111,3 +112,18 @@ The response is given as :
      Hello
      Hello
      Hello
+
+B. 
+  for(int i=1;i<=10;i++){
+    Even obj = Even(i);
+    if(obj.checkEven()==true){
+        print(i);
+    }
+  }
+
+  Console Output:
+      2 
+      4
+      6
+      8
+      10
