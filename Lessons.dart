@@ -321,3 +321,61 @@ NB: Provider and riverpod are used for state management.
     Duratio(milliseconds : 5000)   // This causes a delay of 5s in flutter
 );
 40.Safe Area prevents intrusion to the system of the device.
+41.Navigation:
+A.
+MaterialButton(
+        color : Colors.cyan,
+        onPressed : (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>AboutWeb(),));
+        }
+
+    )
+
+B.  Using Routes,
+ Widget build(BuildContext context){
+        return MaterialApp(
+                routes: {
+        '/' : (_) > HomeWeb(),
+        '/about' : (_) > AboutWeb(),
+    },
+         home : HomeWeb(),
+        );
+}
+   
+C. Create a routes file i.e routes.dart where all the routes will be stored.
+42.Deep Linking is the ability to open an external site directly within a flutter app.
+43.go_router is used for 
+   GoRouter is a routing (navigation) package for Flutter.
+It helps you move between screens (pages) in an app using URLs / routes,
+in a clean and structured way.
+A traffic controller for your app screens.
+ Eg1 is :
+  
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  MyApp({super.key});
+
+  // Define routes
+  final GoRouter _router = GoRouter(
+    routes: [
+      GoRoute(
+        path: '/',
+        builder: (context, state) => HomePage(),
+      ),
+      GoRoute(
+        path: '/profile',
+        builder: (context, state) => ProfilePage(),
+      ),
+    ],
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.rsouter(
+      routerConfig: _router,
+    );
+  }
+}
