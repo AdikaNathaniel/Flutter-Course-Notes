@@ -379,3 +379,23 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+44.A SizedBox does the following two key things:
+  * Sets a fixed width and/or height for a widget.
+  * Adds empty space between widgets.
+
+45.
+Padding(
+  // Adds padding (space) around the child widget
+  padding: EdgeInsets.only(
+    left: 16,   // Adds 16 pixels of space to the left side
+    top: 8,     // Adds 8 pixels of space to the top
+    right: 24,  // Adds 24 pixels of space to the right side
+    bottom: 12, // Adds 12 pixels of space to the bottom
+  ),
+  child: Text(
+    'Hello, Flutter!', // The text displayed on the screen
+    style: TextStyle(
+      fontSize: 18,    // Sets the font size of the text
+    ),
+  ),
+);
