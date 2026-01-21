@@ -399,3 +399,61 @@ Padding(
     ),
   ),
 );
+46.
+The `extendBodyBehindAppBar` property in Flutter is used to control whether the body of a `Scaffold` starts below the AppBar or extends behind it. By default, this property is set to `false`, which means the AppBar occupies its own space at the top of the screen and the body content begins underneath it. This is suitable for simple and traditional layouts where content should never overlap the AppBar.
+When `extendBodyBehindAppBar` is set to `true`, the body of the Scaffold is allowed to extend from the very top of the screen and appear behind the AppBar. 
+This solves the problem of not being able to create immersive or full-screen designs, such as screens with background images, gradient headers, or transparent AppBars.
+ In this case, the AppBar is drawn on top of the body content, creating a modern and visually appealing effect.
+However, enabling this option can cause body content to be hidden underneath the AppBar. To prevent this, developers usually add top padding using widgets like `SafeArea` or by manually adjusting padding with `MediaQuery`. In summary, setting `extendBodyBehindAppBar` to `true` is useful for full-screen and immersive UI designs, while keeping it `false` is better for straightforward layouts where content clarity is the priority.
+47.
+Spacing
+spacing controls the horizontal space between items in the same row 
+(or vertical space if the wrap direction is vertical).
+Code is given as :
+      Wrap(
+  spacing: 10.0, // space between 1, 2, and 3
+  children: [
+    Text('1'),
+    Text('2'),
+    Text('3'),
+     ],
+   )
+This gives: 
+       1   2   3
+Another example is :
+     A.  Hello    world    Flutter.   -- This uses spacing.
+       
+     B.  Hello    world    Flutter.   
+                                     -- This uses runSpacing          
+         This     is      amazing!
+
+48. 
+    var width = MediaQuery.of(context).size.width   -- This allows the app to fit to suit the screen 
+size.
+    IconButton(
+      onPressed : () async {
+            await launch("www.google.com")   -- This should open this url when clicked
+      }
+    )
+ -- This opens the URL outside your app, using the device’s default browser (Chrome, Safari).
+ 49.
+ Sliver AppBar is a scroll-aware AppBar in Flutter that changes its size and behavior as you scroll.
+ expandedHeight is used to increase the height of the SliverApp Bar.
+
+ An AppBar is a simple, fixed header that stays in the same position at the top of the screen.
+It does not respond to scrolling and is typically used inside a `Scaffold` for basic page 
+layouts where the header should always remain visible and unchanged.
+
+A SliverAppBar, on the other hand, is scroll-aware and dynamic.
+It is designed to work inside a `CustomScrollView` and can expand, collapse, hide, or reappear based on the user’s scrolling behavior. 
+This makes it more powerful and flexible, allowing developers to create modern UI effects such as collapsing headers, floating titles, and animated backgrounds.
+
+In summary, use an AppBar for straightforward, static layouts, 
+and a SliverAppBar when you need advanced, scroll-based interactions and flexible app bar behavior.
+It allows you to add an image as well to the Silver AppBar.
+
+50.Two types of Renderers exist in Flutter:
+    - Canvas Kit : This is fully consistent with flutter mobile and desktop.
+It generally has a faster performance with higher widget density and adds about 2MB in download size.
+    -  HTML  : This uses HTML elements,CSS,SVG elements and Canvas elements.
+The renderer usually has a smaller download size.
