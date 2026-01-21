@@ -466,6 +466,6 @@ to HTML Renderer for Mobile.
 
 51. The FlexibleSpaceBar controls what appears inside the expandable and collapsible area of a 
 SliverAppBar and how it behaves while scrolling.
-So if you want an image to be in it,you define it in this line of code.
+So if you want an image to be in it, you define it in this line of code.
 
      
