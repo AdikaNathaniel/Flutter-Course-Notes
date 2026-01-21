@@ -454,6 +454,18 @@ It allows you to add an image as well to the Silver AppBar.
 
 50.Two types of Renderers exist in Flutter:
     - Canvas Kit : This is fully consistent with flutter mobile and desktop.
+Canvas Kit Renderer is usually for Desktop by default.
 It generally has a faster performance with higher widget density and adds about 2MB in download size.
     -  HTML  : This uses HTML elements,CSS,SVG elements and Canvas elements.
 The renderer usually has a smaller download size.
+Hence,HTML Renderer will be used when it is an app for a mobile device by default.
+NB : There can be a switch between which of the Render is used.This can be done by:
+         `` flutter run -d Chrome --web-renderer html ``
+Use this command when you are on a PC and want to switch from the default mode of Canvas for Desktop
+to HTML Renderer for Mobile.
+
+51. The FlexibleSpaceBar controls what appears inside the expandable and collapsible area of a 
+SliverAppBar and how it behaves while scrolling.
+So if you want an image to be in it,you define it in this line of code.
+
+     
