@@ -468,4 +468,7 @@ to HTML Renderer for Mobile.
 SliverAppBar and how it behaves while scrolling.
 So if you want an image to be in it, you define it in this line of code.
 
+52.
+color : color == null? Colors.black : color
+This means,if color is null,use black otherwise if color has got a value,use that color value.
      
