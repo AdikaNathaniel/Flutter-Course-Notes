@@ -473,4 +473,165 @@ color : color == null? Colors.black : color
 This means,if color is null,use black otherwise if color has got a value,use that color value.
 
 53.sans and SansBold are font-family.
-     
+54.In Flutter, the overflow property controls what happens when content is bigger 
+than the space available.
+Essentially,what happens is that,Text that doesn’t fit is cut and "..." is added at the end.
+
+55.Firebase has banned underscores in flutter project IDs.
+So a project-id "coding_liquids_app_nat" , This will not be accepted but should
+be taken rather converted as "codingnat".
+
+56.Flutter Firebase can be setup wiyj FlutterFire CLI.
+57.Firestore is a database from Firebase.
+58.
+import 'package:flutter/foundaation.dart' show KIsWeb.
+        KIsWeb gives true if the app is running on the web.
+This is used to ensure that code for firebase is initialized or setup in 
+a certain way for storing data.
+59.
+Ensure the minSdkVersion is at least 21 when setting up flutter in the build.gradle file 
+for setting up with firebase.
+60.From Firebase,you can either use the Realtime Database and the FireStore Database.
+61.Map is a key-value pair.
+
+62.
+The Logger package in Flutter is a utility used to record and display messages that describe what an application is doing while it runs. It helps developers monitor app behavior, trace program execution, and identify errors more easily during development and debugging. Unlike simple print statements, the Logger package supports different log levels such as debug, information, warnings, and errors, making it easier to understand the severity and purpose of each message. It also formats logs in a clear and readable way, which is especially useful in larger applications where tracking issues can be difficult. Overall, the Logger package improves code maintainability and debugging efficiency by providing structured and meaningful logging output.
+63.Flutter web apps can be deployed from firebase.
+64.Firebase security rules can be set on Firebase to say maybe you want to
+read or only be able to write data to a particular section of a database.
+65.
+MobX is used for state management in applications—especially in frontend frameworks 
+like React, Flutter, and Vue.
+MobX helps you manage and keep track of app data (state) and 
+automatically update the UI when that data changes.
+66.Multithreading is multiple thread from a CPU working at the same time.
+Multiple tasks running at the same time on a single core of a CPU.
+67.
+An isolate is like a separate worker in your Flutter app that runs independently
+from the main app.
+(a) Each isolate has its own memory
+(b) Isolates do not share variables
+(c) They communicate by sending messages
+(d) Flutter uses isolates to handle heavy or long-running tasks in the background.
+
+Why are isolates important?
+
+* Flutter apps run the UI on a single main thread.
+* If you do heavy work there (like large calculations or file processing), 
+the app will lag or freeze.
+* Isolates solve this by moving heavy work off the main thread.
+
+68.Software architecture is the blueprint for creating an app talking about
+how various components will interact with one another.
+    A. Model-View-Controller
+* This is a pattern to separate the concerns of an application.
+* Like the name implies,it is made up of the Model,View and Controller.
+    - Model deals with data handling i.e any operations at all that need to be
+performed on the data.
+                      ADVANTAGES OF MVC
+* Separation of Concerns
+* Easy Testing
+* Improved organization of code
+                      DISADVANTAGES OF MVC
+* MVC is thought to be an overkill for small apps.
+* State Management can be complex in large applications.
+
+    - View displays the data to the user and deals with user interactions.
+All the widgets that display on the UI make up the View.Widget tree logic is used here as well.
+
+    - Controller acts as the mediator between Model and View.
+When there is user input from the view,processes it by say fetching data from the Model
+and then redisplaying it back to the user.
+The business logic is typically defined here.
+
+NB : Model-View-Controller can be dart files in the frontend.
+
+    B. Model-View-View-Model Architecture
+* The three components are the :
+      - Model 
+      - View
+      - View-Model
+   - Model deals with the data handling like the restructuring of json data into the required
+   suitable format.
+   - View deals with the UI elements that is how the data is presented to a user.
+View has a main concern of only widgets.
+   - View-Model acts as the mediator between the Model and the View.It retrieves the data from the Model,
+processes it and displays it to the user.
+   Eg : It can take timestamp data from the Model and convert it into a user friendly format
+for the display by the view.So that preprocessing is done by the View-Model.
+
+          ADVANTAGES OF MVVM
+* Separation of concerns
+* Changes and scalability
+
+NB : Most startups usually like to work with MVVM architecture.
+The advantages and disadvantages of MVVM apply and are same as that of the MVC architecture.
+        C.    FLUTTER BLOC
+* BLOC stands for Business Logic Component.
+* It is a state management solution that helps separate business logic from the UI of the app.
+              ADVANTAGES OF BLOC
+* Clean Code
+* Easy Testing
+* Scalability
+             CORE PARTS OF BLOC PATTERN
+* Events : These are input to a BLOC.Eg is a user clicking a button to refresh a page.
+That is an event.
+This can lead to say an API call.
+* States : These are output of a BLOC.Eg in a weather app,the state can be weather data
+loaded or weather data loading. States can be said to be the response to an event.
+
+States in BLOC pattern are immutable that is once a state is reaced,it can be changes like that.
+* Transitions : A change of state from one point to another.
+Eg from weather loading using the Circular Spinner to the weather data successfully loaded.
+
+* BLOC can be used for small apps as well.
+* Streams work well with BLOC pattern.
+
+* The final variable is used when the value can be changed throughout the application
+but the const is used when that value can be never changed in the application.
+
+
+    D. CLEAN ARCHITECTURE
+* This architecture is general to all languages.
+                             PRINCIPLES OF CLEAN ARCHITECTURE
+    - One principle of clean architecture is that the business logic should be tested
+without any UI or database elements.
+    - Another principle is that the UI can change easily without changing the rest of the
+system.
+    - Another principle is that the business logic should remain unattached even after the
+DB is modified.
+
+  E. DOMAIN -DRIVEN DESIGN
+Designing software so that the code structure mirrors the real business problem.
+
+Domain-Driven Design (DDD) is a way of building software so that its structure matches the real-world business it represents. Instead of organizing code around technical parts like databases or APIs, it organizes everything around business concepts, rules, and language. The main goal is to make the system understandable to both developers and business stakeholders, so everyone speaks the same language and the software truly reflects how the business works.
+
+In DDD, the domain is the real problem space the software is solving. For an ecommerce system, the domain is online shopping. Within that domain, teams use a shared vocabulary called ubiquitous language. Words like cart, order, payment, and inventory are used in meetings, documentation, and directly in the code. This prevents confusion because the terminology is consistent everywhere.
+
+DDD also distinguishes between entities and value objects. An entity is something that has a unique identity, like a customer with an ID. A value object is defined only by its attributes, such as a price or an address. Another important idea is aggregates, which are groups of related objects treated as a single unit. For example, an order aggregate might include the order itself, its items, and its shipping details. There is also the concept of bounded contexts, meaning different parts of a system handle different responsibilities. In an ecommerce platform, the payment section, shipping section, and product catalog each have their own rules and models.
+
+To see how this works in practice, imagine designing an ecommerce app using DDD. Instead of creating generic classes like “CartManager” or “OrderHandler,” you would create structures that mirror real shopping behavior. For example, a cart would contain items, each item would have quantity and price, and the cart would know how to calculate its total. The names and logic directly reflect how shopping works in real life.
+
+A helpful real-life analogy is building a hospital system. A poorly designed system might organize everything by technical components like database tables or user interface screens. But a DDD-based system would organize around real hospital concepts such as patients, doctors, appointments, and prescriptions. That structure matches how hospitals actually operate, making the software easier to understand, maintain, and expand.
+
+In simple terms, Domain-Driven Design means designing software so that its structure mirrors the real world it serves.
+
+A bounded context in Domain-Driven Design is a clearly defined boundary within a system where a specific model, terminology, and business rules apply consistently. Inside that boundary, words, logic, and data structures have one precise meaning, but outside it, the same terms may mean something different because they belong to another part of the system with different responsibilities.
+
+For example, in an ecommerce application, the payment section and the shipping section can each be their own bounded context. 
+In the payment context, an “order” refers to something that is waiting to be paid for and contains information such as payment status, billing details, and transaction records. 
+In the shipping context, however, an “order” refers to something that is ready to be delivered and includes shipping address, courier service, and tracking information.
+Even though both sections use the word “order,” each defines and uses it differently because they operate within separate boundaries.
+                               ADVANTAGES OF DDD
+1. Scalability
+2. Flexibility - Bounded context allow for specific changes to be mafe to specific sections
+3. Focused developmenet - Teams can work on their bounded context
+                               DISADVANTEAGES OF DDD
+1. Complexity of the system
+2. Domain expertise of each bounded context is required.
+3. Refinement is continuous as the project grows , more bounded context must be added.
+
+
+
+            
+
