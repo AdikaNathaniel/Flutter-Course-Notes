@@ -652,6 +652,12 @@ and the regex engine does the matching.
 
 * KIsWeb mean that the app is running on the web platform.
 * The security rules has one example of being able to read or write to firestore by a user.
+* In firestore,
+      - Collections store documents and documents store the actual data.
+    
+* Setting digits only to true means that only digits will be accepted by that text field.
+* A reset function implies that if values are in the DB,the reset function will send the values back
+to zero.
 
             
 
