@@ -632,6 +632,26 @@ Even though both sections use the word “order,” each defines and uses it dif
 3. Refinement is continuous as the project grows , more bounded context must be added.
 
 
+* Riverpod is a state management library that makes it possible to manage states in an app.
+Riverpod is an advancement to the provider package.
+Hence,we say that Riverpod defines the state of the application where the state is held as
+data that is needed to display and interact with the app.
+
+* To prevent memory leak,the provider of the app is disposed off when the state closes.
+
+* the "flutter_launcher_name" package is used to change the name of the application.
+* The then keyword is used like the AND gate where if the LHS runs without errors,then the RHS will run 
+without errors as well.
+
+* Regex (short for Regular Expression) is a pattern-matching language used to search, 
+match, and manipulate text based on specific rules.
+In simple terms, a regex is a special string pattern that tells a program how to find or validate text.
+Instead of checking text manually, you describe what you’re looking for using symbols and rules
+and the regex engine does the matching.
+
+
+* KIsWeb mean that the app is running on the web platform.
+* The security rules has one example of being able to read or write to firestore by a user.
 
             
 
