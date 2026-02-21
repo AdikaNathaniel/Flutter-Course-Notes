@@ -705,4 +705,12 @@ XML is Extensive MarkUp Language.
     These above are data formats for representing data.
 60. Client-Server Architecture uses APIs.
             
+61.
+async and await are used in programming to handle tasks that take time (like fetching data from a server or reading a file) without freezing or blocking the rest of the program.
 
+In simple terms, async marks a function as asynchronous, meaning it can run in the background, 
+while await pauses that function until a task finishes, without stopping the entire application. 
+This makes code that deals with delays or external operations more efficient and easier to read.
+
+In other words,it means; An asynchronous function can pause its execution until the data it needs is ready, 
+while the rest of the application continues running.
