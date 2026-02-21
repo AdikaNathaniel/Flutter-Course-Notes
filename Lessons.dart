@@ -739,3 +739,6 @@ while the rest of the application continues running.
  screen refresh rate.
  In essence, vsync ensures Flutter animations run smoothly and efficiently by syncing them with the screen’s refresh cycle 
  and pausing them when not visible.
+
+ 66.You can deploy your flutter web app on firebase but your custom backend in NestJS cannot be hosted on firebase.
+ 67.Drawer is for navigation.
