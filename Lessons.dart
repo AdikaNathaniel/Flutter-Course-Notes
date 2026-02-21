@@ -714,3 +714,18 @@ This makes code that deals with delays or external operations more efficient and
 
 In other words,it means; An asynchronous function can pause its execution until the data it needs is ready, 
 while the rest of the application continues running.
+
+62. Recall that PUT is for full update and PATCH is for partial update.
+
+
+63. CI/CD stands for Continuous Integration and Continuous Delivery (or sometimes Continuous Deployment).
+
+ - Continuous Integration (CI): Developers frequently merge code changes into a shared repository, where automated tests and checks run to detect errors early.
+ - Continuous Delivery (CD): Code changes are automatically prepared and validated so they can be released to production at any time.
+ - Continuous Deployment (also CD): An extension of delivery where changes are automatically released to production without manual approval.
+                                    Typical Flow
+1. Developer pushes code
+2. CI system runs tests automatically
+3. Tests pass → Me rge allowed
+4. Tests fail → Fix required before merge
+   * GitHub Actions is typically used for this.
