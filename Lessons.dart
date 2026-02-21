@@ -729,3 +729,13 @@ while the rest of the application continues running.
 3. Tests pass → Me rge allowed
 4. Tests fail → Fix required before merge
    * GitHub Actions is typically used for this.
+
+64.
+  The late keyword is used to declare a non-nullable value that will be initialized later.
+  Where later implies that as at the time of initialization,the non-null value cannot be determined.
+
+65.
+ In Flutter, vsync is used to control animation timing efficiently by syncing animations with the device’s 
+ screen refresh rate.
+ In essence, vsync ensures Flutter animations run smoothly and efficiently by syncing them with the screen’s refresh cycle 
+ and pausing them when not visible.
