@@ -742,3 +742,39 @@ while the rest of the application continues running.
 
  66.You can deploy your flutter web app on firebase but your custom backend in NestJS cannot be hosted on firebase.
  67.Drawer is for navigation.
+
+ 68.Asynchronous Programming ensure that tasks wait before moving on to the next tasks.
+    Egs include :
+        * Fetching data over a network
+        * Writing data to a DB
+        * Reading data from a file
+
+In dart,async is thought to belong to the Future function.
+       
+        int a=0;
+    void main() async{
+            add();
+            print("$a");
+    }
+
+     add() async{
+        await Future.delayed(Duration(seconds : 1));
+        a=a+2;
+     }
+
+This would return 0.
+This is because,the main is async without any await so it needs not 
+wait on a response from the add funtion.But when we get:
+            
+        int a=0;
+    void main() async{
+            await add();
+            print("$a");
+    }
+
+     add() async{
+        await Future.delayed(Duration(seconds : 1));
+        a=a+2;
+     }
+This would return 2.
+This is because,the main would wait on the add for it to run before performing the add operation.
